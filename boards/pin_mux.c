@@ -309,7 +309,7 @@ void BOARD_InitLEDsPins(void)
     /* Port B Clock Gate Control: Clock enabled */
     CLOCK_EnableClock(kCLOCK_PortB);
     /* Port E Clock Gate Control: Clock enabled */
-    CLOCK_EnableClock(kCLOCK_PortE);
+    //CLOCK_EnableClock(kCLOCK_PortE);
 
     gpio_pin_config_t LED_BLUE_config = {
         .pinDirection = kGPIO_DigitalOutput,
@@ -407,7 +407,7 @@ BOARD_InitDEBUG_UARTPins:
 void   BOARD_UARTPins(void)
 {
     /* Port B Clock Gate Control: Clock enabled */
-    CLOCK_EnableClock(kCLOCK_PortB);
+   // CLOCK_EnableClock(kCLOCK_PortB);
 
     const port_pin_config_t DEBUG_UART_RX = {/* Internal pull-up/down resistor is disabled */
                                              kPORT_PullDisable,
